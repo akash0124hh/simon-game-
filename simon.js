@@ -52,7 +52,7 @@ function nextSequence(){
 }
 
 function playSound(color){
-  var audioPath = "assets/sounds/"+color+".mp3";
+  var audioPath = "assets/sound/"+color+".mp3";
   var audio = new Audio(audioPath);
   audio.play();
 }
@@ -89,7 +89,14 @@ function checkAnswer(currentLevel){
   }
 }
 
-function starterOver(){
+function starterOver() {
+  // Calculate the score
+  var score = level - 1; // Subtract 1 to get the correct score
+
+  // Display the score on the interface
+  $("#level-title").text("Game Over, Your Score: " + score + ". Press Any Key to Restart");
+  
+  // Reset game variables
   level = 0;
   gamePattern = [];
   started = false;
