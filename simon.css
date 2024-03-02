@@ -1,16 +1,17 @@
 body {
     text-align: center;
-    background-color: skyblue;
+    background-color: rgba(255, 0, 0, 0.284);
     margin-top: 100px ;
   }
   
   #level-title {
-    font-family: cursive;
-    font-size: 4rem;
-    margin: 1.5% 2%;
-    margin-top: 50px;
-    color: darkblue;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 24px;
+    text-align: center;
+    color: #fff; /* Change the color to match your design */
+    margin-top: 20px; /* Adjust the margin to position it properly */
   }
+  
   
   .container {
     display: block;
@@ -26,6 +27,41 @@ body {
     height: 170px;
     width: 170px;
     border: 4px solid white;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+  }
+  .btn:hover {
+    transform: scale(1.1); /* Scale the button slightly on hover */
+  }
+  
+  /* Animate the button when pressed */
+  .btn:active {
+    transform: scale(0.9); /* Shrink the button slightly when pressed */
+  }
+  
+  /* Add unique styles for different buttons */
+  .red {
+    background-color: red;
+  }
+  
+  .green {
+    background-color: green;
+  }
+  
+  .blue {
+    background-color: blue;
+  }
+  
+  .yellow {
+    background-color: yellow;
+  }
+  
+  .grey {
+    background-color: grey;
+  }
+  
+  .violet {
+    background-color: violet;
   }
   
   .game-over {
