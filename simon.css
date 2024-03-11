@@ -1,133 +1,97 @@
 body {
-    text-align: center;
-    background-color: rgba(255, 0, 0, 0.284);
-    margin-top: 100px ;
-  }
-  
-  #level-title {
-    font-family: 'Press Start 2P', cursive;
-    font-size: 24px;
-    text-align: center;
-    color: #fff; /* Change the color to match your design */
-    margin-top: 20px; /* Adjust the margin to position it properly */
-  }
-  
-  
-  .container {
-    display: block;
-    width: 50%;
-    margin: auto;
-  }
-  
-  .btn {
-    margin: 3px;
-    display: inline-block;
-    text-align: center;
-    font-size: 30px;
-    height: 170px;
-    width: 170px;
-    border: 4px solid white;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-  }
-  .btn:hover {
-    transform: scale(1.1); /* Scale the button slightly on hover */
-  }
-  
-  /* Animate the button when pressed */
-  .btn:active {
-    transform: scale(0.9); /* Shrink the button slightly when pressed */
-  }
-  
-  /* Add unique styles for different buttons */
-  .red {
-    background-color: red;
-  }
-  
-  .green {
-    background-color: green;
-  }
-  
-  .blue {
-    background-color: blue;
-  }
-  
-  .yellow {
-    background-color: yellow;
-  }
-  
-  .grey {
-    background-color: grey;
-  }
-  
-  .violet {
-    background-color: violet;
-  }
-  
-  .game-over {
-    background-color: rgb(255, 60, 0);
-    opacity: 0.8;
-  }
-  
-  .red {
-    background-color: red;
-  }
-  
-  .green {
-    background-color: green;
-  }
-  
-  .blue {
-    background-color: blue;
-  }
-  
-  .yellow {
-    background-color: yellow;
-  }
+  text-align: center;
+  margin-top: 100px;
+  background-color: rgb(0, 0, 0);
+  background-image: url('photo.1.jpg');
+  background-size: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
 
-  .grey{
-    background-color: grey;
-  }
-  
-  .violet{
-    background-color: violet;
-  }
-  
-  .pressed {
-    box-shadow: 0 0 20px white;
-    background-color: grey;
-  }
-  .btn-start {
-    font-family: "Press Start 2P", cursive;
-    font-size: 3rem;
-    margin: 5% 5%;
-    color: #fef2bf;
-    background-color: transparent;
-    border-color: transparent;
-    visibility: hidden;
-  }
-  .btn-start:focus,
-  .btn-start:active {
-    outline: none;
-    box-shadow: none;
-  }
-  .btn-start:hover {
-    color: red;
-  }
-  @media (max-width: 1024px) {
-    #level-title {
-      margin-top: 15%;
-      margin-bottom: 15%;
-    }
-    .btn {
-      height: 200px;
-      width: 200px;
-    }
-    .btn-start {
-      visibility: unset;
-    }
-  }
-  
-  .hidden-text {
-    visibility: hidden;
-  }
+#level-title {
+  font-family: 'Press Start 2P', cursive;
+  font-size: 24px;
+  color: #fff;
+  margin-top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.btn {
+  margin: 10px;
+  text-align: center;
+  font-size: 30px;
+  height: 150px;
+  width: 150px;
+  border: 4px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.btn:hover {
+  transform: scale(1.05);
+}
+
+.btn:active {
+  transform: scale(0.95);
+}
+
+.red {
+  background-color: red;
+}
+
+.green {
+  background-color: green;
+}
+
+.blue {
+  background-color: blue;
+}
+
+.yellow {
+  background-color: yellow;
+}
+
+.grey {
+  background-color: grey;
+}
+
+.violet {
+  background-color: violet;
+}
+
+.game-over {
+  background-color: rgba(255, 60, 0, 0.8);
+}
+
+.pressed {
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.8);
+}
+
+.btn-start {
+  font-family: "Press Start 2P", cursive;
+  font-size: 2rem;
+  margin: 20px;
+  padding: 10px 20px;
+  color: #fef2bf;
+  background-color: transparent;
+  border: 2px solid #fef2bf;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-start:focus,
+.btn-start:active {
+  outline: none;
+}
+
+.btn-start:hover {
+  color: red;
+  border-color: red;
+}
